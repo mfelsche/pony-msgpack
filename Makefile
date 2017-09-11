@@ -7,6 +7,9 @@ msgpack: msgpack.pony
 	echo "MAKE DIR $(current_dir)"
 	CC=$(CC) ponyc .
 
+run: msgpack
+	./msgpack
+
 clean:
 	rm -f msgpack test/test
 
